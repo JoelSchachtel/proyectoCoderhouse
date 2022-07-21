@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 20px;
+  background-color: #5800ff;
+  font-family: "Poppins", sans-serif;
+}
+
+#cart-counter {
+  font-size: 17px;
+  position: absolute;
+  right: -12px;
+  top: 6px;
+  background-color: #5800ff;
+  padding: 0px 6px;
+  color: #ffffff;
+  border-radius: 50%;
+  border: solid 1px #ffffff;
+  font-weight: bold;
+}
+
+#cart-counter-fav {
+  font-size: 17px;
+  position: absolute;
+  right: 90px;
+  top: 6px;
+  background-color: #5800ff;
+  padding: 0px 6px;
+  color: #ffffff;
+  border-radius: 50%;
+  border: solid 1px #ffffff;
+  font-weight: bold;
+}
+
+span {
+  color: #5800ff;
+  font-weight: 400;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+
+.boton {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    width: 10em;
+    height: 3.6em;
+    line-height: 2.5em;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   .boton:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .boton:hover {
+    color: #fff;
+   }
+   
+   .boton:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .boton:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .boton:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+
+   .boton-favorito {
+    --colorcito: #ad0b0b;
+    font-family: inherit;
+    display: inline-block;
+    width: 10em;
+    height: 3.6em;
+    line-height: 2.5em;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--colorcito);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--colorcito);
+   }
+   
+   .boton-favorito:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--colorcito);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .boton-favorito:hover {
+    color: #fff;
+   }
+   
+   .boton-favorito:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .boton-favorito:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .boton-favorito:active:before {
+    background: #ad0b0b;
+    transition: background 0s;
+   }
