@@ -43,8 +43,8 @@ span {
 }
 
 .card:hover {
-    transform: scale(1.1);
-    transition: .5s;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .width30rem {
@@ -52,99 +52,158 @@ span {
 }
 
 .boton {
-    --color: #560bad;
-    font-family: inherit;
-    display: inline-block;
-    width: 10em;
-    height: 3.6em;
-    line-height: 2.5em;
-    margin: 10px;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid var(--color);
-    transition: color .5s;
-    z-index: 1;
-    font-size: 17px;
-    border-radius: 6px;
-    font-weight: 500;
-    color: var(--color);
-   }
-   
-   .boton:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: var(--color);
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-   }
-   
-   .boton:hover {
-    color: #fff;
-   }
-   
-   .boton:before {
-    top: 100%;
-    left: 100%;
-    transition: all .7s;
-   }
-   
-   .boton:hover:before {
-    top: -30px;
-    left: -30px;
-   }
-   
-   .boton:active:before {
-    background: #3a0ca3;
-    transition: background 0s;
-   }
+  --color: #560bad;
+  font-family: inherit;
+  display: inline-block;
+  width: 10em;
+  height: 3.6em;
+  line-height: 2.5em;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+}
 
-   .boton-favorito {
-    --colorcito: #ad0b0b;
-    font-family: inherit;
-    display: inline-block;
-    width: 10em;
-    height: 3.6em;
-    line-height: 2.5em;
-    margin: 10px;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid var(--colorcito);
-    transition: color .5s;
-    z-index: 1;
-    font-size: 17px;
-    border-radius: 6px;
-    font-weight: 500;
-    color: var(--colorcito);
-   }
-   
-   .boton-favorito:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: var(--colorcito);
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-   }
-   
-   .boton-favorito:hover {
-    color: #fff;
-   }
-   
-   .boton-favorito:before {
-    top: 100%;
-    left: 100%;
-    transition: all .7s;
-   }
-   
-   .boton-favorito:hover:before {
-    top: -30px;
-    left: -30px;
-   }
-   
-   .boton-favorito:active:before {
-    background: #ad0b0b;
-    transition: background 0s;
-   }
+.boton:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.boton:hover {
+  color: #fff;
+}
+
+.boton:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.boton:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.boton:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}
+
+.boton-favorito {
+  --colorcito: #ad0b0b;
+  font-family: inherit;
+  display: inline-block;
+  width: 10em;
+  height: 3.6em;
+  line-height: 2.5em;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--colorcito);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--colorcito);
+}
+
+.boton-favorito:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--colorcito);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.boton-favorito:hover {
+  color: #fff;
+}
+
+.boton-favorito:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.boton-favorito:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.boton-favorito:active:before {
+  background: #ad0b0b;
+  transition: background 0s;
+}
+
+.full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.item {
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.item-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.item-image {
+  height: 300px;
+  width: 100%;
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px 15px;
+}
+
+.item-details > .item-price {
+  margin: 0;
+}
+
+/* ? SHOPPING CART */
+.shopping-cart-items {
+  padding: 20px 0px;
+}
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+.shopping-cart-total {
+  min-height: 96px;
+}

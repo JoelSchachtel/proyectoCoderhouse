@@ -45,28 +45,136 @@ listado.push(auriLogitech, auriGlobal, auriComun, auriPro);
 
 for (const pListado of listado) {
     let codeCard = document.createElement("div");
-    codeCard.innerHTML= `
+    codeCard.innerHTML = `
     <img src= ${pListado.img}
         class="card-img-top" alt="${pListado.product}">
     <div class="card-body">
         <h5 class="card-title">$${pListado.price}</h5>
         <p class="card-text">${pListado.desc}</p>
         <div class="botones flex-row align-items-center">
-            <button class="boton col-lg-5"> ¡Comprar! </button>
+            <button class="boton col-lg-5 addToCart" id="realizar-compra"> ¡Comprar! </button>
             <button class="boton-favorito col-lg-5"> Favoritos </button>
         </div>
     </div>
 </div>
     `
     document.getElementById("cards").append(codeCard);
-    codeCard.classList.add("card", "col-lg-3", "m-4", "width30rem")
+    codeCard.classList.add("card", "col-lg-3", "m-4", "width30rem", "productos")
 };
+//----------------------------------------------------------------------------------------//
+//Eventos
+
+// const carrito = document.getElementById("#carrito");
+// const producto = document.getElementById("#productos");
+// const vaciarCarritoBtn = document.getElementById("#vaciar-carrito");
 
 
+// eventListeners();
 
+// function eventListeners() {
+//     productosSeleccionados.addEventListener(`click`, realizarCompra);
+//     carrito.addEventListener(`click`, eliminarCarrito);
+//     vaciarCarritoBtn.addEventListener(`clcik`, vaciarCarrito);
+//     document.addEventListener(`DOMContentLoaded`, leerLocalStorage);
+// }
 
+// //añadir al carrito
+// function comprarProducto() {
+//     e.preventDefault();
+//     if(e.target.classList.contains(`agregar-carrito`)) {
+//         const producto = e.target.parentElement.parentElement;
+//         leerDatosProducto(producto);
+//     }
+// }
 
+// function leerDadtosProducto(product, price, img, id) {
+//     // for (const pListado of listado) {
+//     //     pListado.product;
+//     //     pListado.price;
+//     //     pListado.img;
+//     //     pListado.id;
+//     // }
 
+//     insertarProducto()
+// }
 
+// function insertarProducto(producto){
+//     const row = document.createElement("tr");
+//     row.innerHTML =`
+//         <td>
+//             <img src=${pListado.img}>
+//         </td>
+//         <td>
+//             ${pListado.product}
+//         </td>
+//         <td>
+//             ${pListado.price}
+//         </td>
+//         <td>
+//         <a href="#" class="borrar-producto" data-id="${pListado.id}">X</a>
+//         </td>
+//         `;
+//         listaProductos.appendChild(row);
+//         guardarProductoLocalStorage(producto);
+
+// }
+
+// function eliminarProducto(e) {
+//     e.preventDefault();
+//     let producto,
+//         productoId;
+
+//     if(e.target.classList.contains(`borrar-producto`)) {
+//         e.target.parentElement.parentElement.remove();
+//         producto = e.target.parentElement.parentElement;
+//         productoId = pListado.id
+//     }
+
+//     eliminarProductoLocalStorage(productoId)
+// }
+
+// function vaciarCarrito() {
+//     while(listaProducto.firstChild) {
+//         listaProducto.removeCHild(listaProducto.firstChild)
+//     }
+
+//     vaciarLocalStorage();
+//     return false;
+// }
+
+// function guardarProductoLocalStorage(producto) {
+//     let producto;
+
+//     producto = obtenerProductoLocalStorage();
+//     producto.push(producto);
+
+//     localStorage.setItem(`productos`, JSON.stringify(producto))
+// }
+
+// function obtenerProductosLocalStorage() {
+//     let productoLS;
+
+//     if(localStorage.getItem(`producto`) === null) {
+//         productoLS = [];
+//     }else {
+//         platilloLS = JSON.parse(localStorage.getItem(`productos`));
+//     }
+//     return productoLS;
+// }
+
+// const comprar = document.querySelector(".boton");
+// const boton = document.querySelector(".boton-prueba");
+
+// boton.addEventListener(`click`, function() {
+//     alert("Se realizo un click");
+// })
+
+// boton.addEventListener(`click`, function() {
+//     console.log("Se eliminará todo el carrito")
+// } )
+
+// comprar.addEventListener(`click`, function() {
+//     alert("Se eliminará todo el carrito")
+// })
 
 
