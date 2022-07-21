@@ -47,6 +47,9 @@ span {
     transition: .5s;
 }
 
+.width30rem {
+  width: 30rem;
+}
 
 .boton {
     --color: #560bad;
