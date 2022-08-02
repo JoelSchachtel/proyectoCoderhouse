@@ -1,55 +1,67 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Rafatec</title>
-    <link rel="icon" href="/images/icono_rafatec.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafacet - Tu comercio de confianza</title>
+  <!-- BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!--- FAV ICON --->
+  <link type="image/png" sizes="16x16" rel="icon" href="./img/icono_rafatec.png">
+  <!--- FONT AWESOME --->
+  <script src="https://kit.fontawesome.com/fdaf6fea2b.js" crossorigin="anonymous"></script>
+  <!--- TOASTIFY --->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <!--- SEO --->
+  <meta name="description" content="Rafatec - Tu casa de electrónica favorita">
+  <meta name="keywords" content="Auriculares, electrónica, store, música, e-sports, deporte">
+  <!--- MIS SCRIPTS --->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="">
-    <nav class="navbar navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <span class="font-weight-bold"><img src="/images/logo_rafatec.png" style="width:70%;" alt=""></span>
-            <div class="d-flex justify-content-end m-3">
-                <a><i class="fas fa-shopping-cart mx-4" id="bell"></i></a>
-                <span id="cart-counter">0</span>
+<body>
+  <nav class="d-flex justify-content-center bg-light">
+      <a href="index.html"><img src="/img/logo_rafatec.png" style="width:10rem; margin: .5rem;" alt=""></a>
+  </nav>
 
+  <main>
 
-            </div>
+    <section class="cart-icon">
+      <div class="cart-icon-container">
+        <a href="#" class="cartIcon"><i class="fa-solid fa-cart-shopping"></i>
+          <div class="cart-icon-number">0</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="cart">
+      <div class="cart-container">
+        <div class="cart-container-background"></div>
+        <div class="cart-items"></div>
+        <hr class="cart-line">
+        <div class="cart-price-flex">
+          <p class="cart-price-text">Total:</p>
+          <p class="cart-price">$0</p>
         </div>
-    </nav>
+        <button class="cart-buy-button">¡Terminar compra!</button>
+      </div>
+    </section>
 
-    <div class="row d-flex align-items-center justify-content-evenly text-center" id="cards" style="padding-top: 20px;">
+
+    <div class="row d-flex align-items-center justify-content-evenly text-center" id="cards" style="padding-top: 20px; padding-left:20px !important;">
     </div>
 
-    <div class="side-bar-wrapper">
-        <div class="sidebar" id="side-bar">
-            <div class="cart-container text-center">
-                <span id="close-cart"><i class="fa fa-window-close" aria-hidden="true"></i></span>
-
-                <h3 class="cart">Tu Carrito</h3>
-                <div id="cart"></div>
-                <div id="carrito" class="container-fluid text-center"></div>
-                <div class="cart-footer">
-                    <button class="botons agregar-carrito" id="${pListado.id}"><i class="fas fa-eraser"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <script src="/js/app.js"></script>
-    <script src="/js/sidebar.js"></script>
-
+  <!--- TOASTIFY --->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <!--- MIS SCRIPTS --->
+  <script src="./js/script5.js"></script>
+  <script src="./js/dropdownMenu.js"></script>
+  <script src="./js/scroll.js"></script>
+  <!-- BOOTSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
