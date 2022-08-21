@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+}
+
+:root {
+    --violet-color: #a267e6;
+    --white-color: #ffffff;
+    --pink-color: #a267e6;
+    --yellow-color: #fffcdb;
+    --violet-color: #bca5c7;
+    --font-title: 'Poppins', sans-serif;
+}
+
+html {
+    overflow-x: none;
+}
+
+body {
+    background-color: #5700ff
+}
+
+/********************** NAV BAR **********************/
+header {
+    position: relative;
+    z-index: 1000;
+    background: var(--white-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.nav-branding-logo {
+    width: 15%;
+    padding-top: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #e667e0;
+    text-decoration: none;
+    display: flex;
+    gap: 8px;
+    font-size: 24px;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 20px;
+}
+
+thead th:nth-child(1) {
+    width: 20%;
+}
+
+thead th:nth-child(2) {
+    width: 35%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 10%;
+}
+
+thead th:nth-child(5) {
+    width: 10%;
+}
+
+thead th:nth-child(6) {
+    width: 10%;
+}
+
+.form-cant {
+    width: 4rem !important;
+}
+
+img {
+    margin: 20px;
+}
+
+#cargando {
+    display: none !important;
+  }

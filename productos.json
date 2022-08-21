@@ -3,31 +3,31 @@
 
     {
         "id": 1,
-        "name": "Global Auricular Bluetooth Negro EPBL027BLACK",
+        "name": "Global Auricular Bluetooth.",
         "price" : 2585,
-        "img": "https://shiftdigital.com.ar/images/Global%20Auricular%20Bluetooth%20Negro%20EPBL027BLACK.jpg",
-        "quantity": 0
+        "cantidad": 1,
+        "img": "https://shiftdigital.com.ar/images/Global%20Auricular%20Bluetooth%20Negro%20EPBL027BLACK.jpg"
     },
     {
         "id": 2,
-        "name": "Haylou by Xiaomi True Auricular GT3 Bluetooth Negro",
+        "name": "Haylou by Xiaomi True.",
         "price" : 4477,
         "img": "https://shiftdigital.com.ar/images/Haylou%20True%20Auricular%20GT3%20Bluetooth%20Negro.jpg",
-        "quantity": 0
+        "cantidad": 1
     },
     {
         "id": 3,
-        "name": "IntCo Auricular Gaming Bluetooth RDH-300 Base recargable negro G11",
+        "name": "IntCo Auricular Gaming Bluetooth.",
         "price" : 2761,
         "img": "https://shiftdigital.com.ar/images/TWS%20Auricular%20Gaming%20Bluetooth%20RDH-300%20negro.jpg",
-        "quantity": 0
+        "cantidad": 1
     },
     {
-        "id": 1,
-        "name": "Auricular Logitech G435",
+        "id": 4,
+        "name": "Auricular Logitech G435 Blue Edition.",
         "price" : 15037,
         "img": "https://shiftdigital.com.ar/images/Logitech%20Auric%20Inalamb%20G435%20White%20Lightspeed%20Bluetooth.jpg",
-        "quantity": 0
+        "cantidad": 1
     }
 ]
 }
