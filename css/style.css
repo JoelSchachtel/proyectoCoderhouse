@@ -362,3 +362,108 @@ tr :first-child {
 .Tcol {
   width: 90px !important;
 }
+
+@media (min-width: 300px) and (max-width: 499px) {
+  .cart-container {
+    height: 300px;
+    width: 20rem;
+    position: fixed;
+    left: 10%;
+    background-color: #fff;
+    z-index: 100;
+    border: 1px solid #a267e6;
+    overflow-y: scroll;
+  }
+
+  .cart-icon {
+    position: absolute;
+    top: .5rem;
+    left: 85%;
+    z-index: 1000;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .cart-icon-container {
+    position: fixed;
+    background-color: white;
+    height: 50px;
+    width: 55px;
+    border-radius: 25%;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+  }
+  
+}
+
+@media (min-width: 500px) and (max-width: 640px) {
+  .cart-container {
+    height: 300px;
+    width: 25rem;
+    position: block;
+    left: 5rem;
+    background-color: #fff;
+    z-index: 100;
+    border: 1px solid #a267e6;
+    overflow-y: scroll;
+  }
+
+  .cart-icon {
+    position: absolute;
+    top: .5rem;
+    left: 85%;
+    z-index: 1000;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .cart-icon-container {
+    position: fixed;
+    background-color: white;
+    height: 50px;
+    width: 55px;
+    border-radius: 25%;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+  }
+  
+}
+
+@media (min-width: 641px) and (max-width: 740px){
+  .cart-container {
+    height: 300px;
+    width: 25rem;
+    position: block;
+    left: 15rem;
+    background-color: #fff;
+    z-index: 100;
+    border: 1px solid #a267e6;
+    overflow-y: scroll;
+  }
+
+  .cart-icon {
+    position: absolute;
+    top: .5rem;
+    left: 85%;
+    z-index: 1000;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .cart-icon-container {
+    position: fixed;
+    background-color: white;
+    height: 50px;
+    width: 55px;
+    border-radius: 25%;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+  }
+  
+}
