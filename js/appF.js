@@ -180,7 +180,7 @@ class Carrito {
         <td>
           <input type="number" class="form-control cantidad form-cant" id="cantidad" min="1" value=${infoProducto.cantidad}>
         </td>
-        <td id="subtotales">${infoProducto.price * infoProducto.cantidad}</td>
+        <td id="subtotales" style="display: none;">${infoProducto.price * infoProducto.cantidad}</td>
         <td>
           <a href="#" class="borrar-producto fa fa-times-circle" id="a-id" data-id="${infoProducto.id}"></a>
         </td>
