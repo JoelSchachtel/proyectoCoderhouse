@@ -45,9 +45,9 @@
                         </div>
                     </div>
 
-                    <div id="carritos" class="main__container" >
+                    <div id="carritos" class="container-fluid" >
                         <table class="" id="lista-compra" >
-                            <thead>
+                            <thead class="d-flex justify-content-center">
                                 <tr>
                                     <th scope="col"></th>
                                     <th scope="col"></th>
@@ -62,20 +62,20 @@
 
                             </tbody>
                         <div>
-                            <tr style="text-align: right !important;">
+                            <tr>
                                 <th colspan="4" scope="col" class="text-right">SUB TOTAL:</th>
                                 <th scope="col">
                                     <p id="subtotal" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></p>
                                 </th>
                                 
                             </tr>
-                            <tr style="text-align: right !important;">
+                            <tr>
                                 <th colspan="4" scope="col" class="text-right">IVA:</th>
                                 <th scope="col">
                                     <p id="igv" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></p>
                                 </th>
                             </tr>
-                            <tr style="text-align: right !important;">
+                            <tr>
                                 <th colspan="4" scope="col" class="">TOTAL:</th>
                                 <th scope="col">
                                     <input type="text" id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></input>
@@ -83,9 +83,6 @@
                             </tr>
 
                         </table>
-                    </div>
-                    <div class="row justify-content-center" id="loaders">
-                        <img id="cargando" src="./images/cargando.gif" class="d-flex justify-content-center" style="width: 10rem; margin-top: 10px;">
                     </div>
                     <div class="row justify-content-center mb-4 mt-3">
                         <div class="col-md-4 mb-2">
